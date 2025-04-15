@@ -12,15 +12,192 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="/js/main.js"></script>
   </head>
+
   <body>
-    Collections Men Women About Contact Sneaker Company Fall Limited Edition
-    Sneakers These low-profile sneakers are your perfect casual wear companion.
-    Featuring a durable rubber outer sole, they’ll withstand everything the
-    weather can offer. $125.00 50% $250.00 0 Add to cart
+    <div class="page">
+      <div class="overlay"></div>
+      <header>
+        <nav>
+          <div class="nav-left">
+            <div class="menu-button"></div>
+            <a href="#" class="logo">
+              <img src="/images/logo.svg" alt="Logo" width="138" height="20" />
+            </a>
+            <ul class="navs">
+              <li><a href="#collections" class="nav-links">Collections</a></li>
+              <li><a href="#men" class="nav-links">Men</a></li>
+              <li><a href="#women" class="nav-links">Women</a></li>
+              <li><a href="#about" class="nav-links">About</a></li>
+              <li><a href="#contact" class="nav-links">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-right">
+            <div class="cart">
+              <img
+                src="/images/icon-cart.svg"
+                alt="Cart"
+                width="22"
+                height="20"
+              />
+              <section class="cart-menu">
+                <h3 class="cart-title">Cart</h3>
+                <hr />
+                <section class="cart-items empty">
+                  <p class="cart-empty">Your cart is empty.</p>
+                </section>
+                <button class="checkout empty">Checkout</button>
+              </section>
+              <div class="cart-count">0</div>
+            </div>
+            <img
+              src="/images/image-avatar.png"
+              alt="Avatar"
+              class="avatar"
+              width="100"
+              height="100"
+            />
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="productPage">
+          <section class="product-gallery">
+            <section class="display-image">
+              <img
+                class="active"
+                src="/images/image-product-1.jpg"
+                alt="Product-Img"
+                width="1000"
+                height="1000"
+              />
+              <img
+                src="/images/image-product-2.jpg"
+                alt="Product-Img"
+                width="1000"
+                height="1000"
+              />
+              <img
+                src="/images/image-product-3.jpg"
+                alt="Product-Img"
+                width="1000"
+                height="1000"
+              />
+              <img
+                src="/images/image-product-4.jpg"
+                alt="Product-Img"
+                width="1000"
+                height="1000"
+              />
+              <div class="prev">
+                <img
+                  src="/images/icon-previous.svg"
+                  alt="Previous-arrow"
+                  width="12"
+                  height="18"
+                />
+              </div>
+              <div class="next">
+                <img
+                  src="/images/icon-next.svg"
+                  alt="Next-arrow"
+                  width="13"
+                  height="18"
+                />
+              </div>
+              <div class="close">
+                <img
+                  src="/images/icon-close.svg"
+                  alt="Close"
+                  width="14"
+                  height="15"
+                />
+              </div>
+            </section>
+            <section class="list-images">
+              <div class="list-image-item active">
+                <img
+                  src="/images/image-product-1-thumbnail.jpg"
+                  alt="product-img"
+                  width="176"
+                  height="176"
+                />
+              </div>
+              <div class="list-image-item">
+                <img
+                  src="/images/image-product-2-thumbnail.jpg"
+                  alt="product-img"
+                  width="176"
+                  height="176"
+                />
+              </div>
+              <div class="list-image-item">
+                <img
+                  src="/images/image-product-3-thumbnail.jpg"
+                  alt="product-img"
+                  width="176"
+                  height="176"
+                />
+              </div>
+              <div class="list-image-item">
+                <img
+                  src="/images/image-product-4-thumbnail.jpg"
+                  alt="product-img"
+                  width="176"
+                  height="176"
+                />
+              </div>
+            </section>
+          </section>
+
+          <section class="product-content">
+            <h3 class="company-name">Sneaker Company</h3>
+            <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+            <p class="product-description">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+
+            <div class="prices">
+              <div class="latest-prices">
+                <p class="current-price">$125.00</p>
+                <p class="current-discount">50%</p>
+              </div>
+              <div class="prev-price">$250.00</div>
+            </div>
+
+            <div class="add-to-cart">
+              <div class="item-cart-count">
+                <button class="remove">
+                  <img
+                    src="/images/icon-minus.svg"
+                    alt="Remove"
+                    width="12"
+                    height="4"
+                  />
+                </button>
+                <span class="item-counter">0</span>
+                <button class="add">
+                  <img
+                    src="/images/icon-plus.svg"
+                    alt="Add"
+                    width="12"
+                    height="12"
+                  />
+                </button>
+              </div>
+              <button class="add-cart-button">Add to cart</button>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
