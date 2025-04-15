@@ -19,12 +19,12 @@
   </head>
 
   <body>
-    <div class="page">
+    <div class="page imagePreview">
       <div class="overlay"></div>
       <header>
         <nav>
           <div class="nav-left">
-            <div class="menu-button"></div>
+            <div class="menu-button hide"></div>
             <a href="#" class="logo">
               <img src="/images/logo.svg" alt="Logo" width="138" height="20" />
             </a>
@@ -45,7 +45,7 @@
                 width="22"
                 height="20"
               />
-              <section class="cart-menu">
+              <section class="cart-menu hide">
                 <h3 class="cart-title">Cart</h3>
                 <hr />
                 <section class="cart-items empty">
@@ -53,7 +53,7 @@
                 </section>
                 <button class="checkout empty">Checkout</button>
               </section>
-              <div class="cart-count">0</div>
+              <div class="cart-count hide">0</div>
             </div>
             <img
               src="/images/image-avatar.png"
@@ -66,12 +66,14 @@
         </nav>
       </header>
 
+      <hr />
+
       <main>
         <section class="productPage">
-          <section class="product-gallery">
+          <section class="product-gallery imagePreview">
             <section class="display-image">
               <img
-                class="active"
+                class="active-img"
                 src="/images/image-product-1.jpg"
                 alt="Product-Img"
                 width="1000"
@@ -95,7 +97,7 @@
                 width="1000"
                 height="1000"
               />
-              <div class="prev">
+              <div class="prev hide">
                 <img
                   src="/images/icon-previous.svg"
                   alt="Previous-arrow"
@@ -103,7 +105,7 @@
                   height="18"
                 />
               </div>
-              <div class="next">
+              <div class="next hide">
                 <img
                   src="/images/icon-next.svg"
                   alt="Next-arrow"
@@ -111,7 +113,7 @@
                   height="18"
                 />
               </div>
-              <div class="close">
+              <div class="close hide">
                 <img
                   src="/images/icon-close.svg"
                   alt="Close"
@@ -121,7 +123,7 @@
               </div>
             </section>
             <section class="list-images">
-              <div class="list-image-item active">
+              <div class="list-image-item active-img">
                 <img
                   src="/images/image-product-1-thumbnail.jpg"
                   alt="product-img"
@@ -193,7 +195,14 @@
                   />
                 </button>
               </div>
-              <button class="add-cart-button">Add to cart</button>
+              <button class="add-cart-button">
+                <img
+                  src="/images/icon-cart.svg"
+                  alt="Cart"
+                  width="22"
+                  height="20"
+                />Add to cart
+              </button>
             </div>
           </section>
         </section>
