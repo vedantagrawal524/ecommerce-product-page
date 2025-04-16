@@ -19,15 +19,15 @@
   </head>
 
   <body>
-    <div class="page imagePreview">
-      <div class="overlay"></div>
+    <div class="page">
       <header>
-        <nav>
+        <nav class="">
           <div class="nav-left">
-            <div class="menu-button hide"></div>
+            <div class="menu-button"></div>
             <a href="#" class="logo">
               <img src="/images/logo.svg" alt="Logo" width="138" height="20" />
             </a>
+            <div class="backdrop"></div>
             <ul class="navs">
               <li><a href="#collections" class="nav-links">Collections</a></li>
               <li><a href="#men" class="nav-links">Men</a></li>
@@ -45,7 +45,7 @@
                 width="22"
                 height="20"
               />
-              <section class="cart-menu hide">
+              <section class="cart-menu">
                 <h3 class="cart-title">Cart</h3>
                 <hr />
                 <section class="cart-items empty">
@@ -53,7 +53,7 @@
                 </section>
                 <button class="checkout empty">Checkout</button>
               </section>
-              <div class="cart-count hide">0</div>
+              <div class="cart-count">0</div>
             </div>
             <img
               src="/images/image-avatar.png"
@@ -66,14 +66,12 @@
         </nav>
       </header>
 
-      <hr />
-
       <main>
         <section class="productPage">
-          <section class="product-gallery imagePreview">
+          <section class="product-gallery desktop">
             <section class="display-image">
               <img
-                class="active-img"
+                class="active"
                 src="/images/image-product-1.jpg"
                 alt="Product-Img"
                 width="1000"
@@ -97,33 +95,9 @@
                 width="1000"
                 height="1000"
               />
-              <div class="prev hide">
-                <img
-                  src="/images/icon-previous.svg"
-                  alt="Previous-arrow"
-                  width="12"
-                  height="18"
-                />
-              </div>
-              <div class="next hide">
-                <img
-                  src="/images/icon-next.svg"
-                  alt="Next-arrow"
-                  width="13"
-                  height="18"
-                />
-              </div>
-              <div class="close hide">
-                <img
-                  src="/images/icon-close.svg"
-                  alt="Close"
-                  width="14"
-                  height="15"
-                />
-              </div>
             </section>
             <section class="list-images">
-              <div class="list-image-item active-img">
+              <div class="list-image-item active">
                 <img
                   src="/images/image-product-1-thumbnail.jpg"
                   alt="product-img"
@@ -155,6 +129,75 @@
                   height="176"
                 />
               </div>
+            </section>
+          </section>
+
+          <section class="lightbox">
+            <section class="product-gallery">
+              <section class="display-image">
+                <img
+                  class="active"
+                  src="/images/image-product-1.jpg"
+                  alt="Product-Img"
+                  width="1000"
+                  height="1000"
+                />
+                <img
+                  src="/images/image-product-2.jpg"
+                  alt="Product-Img"
+                  width="1000"
+                  height="1000"
+                />
+                <img
+                  src="/images/image-product-3.jpg"
+                  alt="Product-Img"
+                  width="1000"
+                  height="1000"
+                />
+                <img
+                  src="/images/image-product-4.jpg"
+                  alt="Product-Img"
+                  width="1000"
+                  height="1000"
+                />
+                <div class="close-button"></div>
+                <div class="prev-button"></div>
+                <div class="next-button"></div>
+              </section>
+              <section class="list-images">
+                <div class="list-image-item active-img">
+                  <img
+                    src="/images/image-product-1-thumbnail.jpg"
+                    alt="product-img"
+                    width="176"
+                    height="176"
+                  />
+                </div>
+                <div class="list-image-item">
+                  <img
+                    src="/images/image-product-2-thumbnail.jpg"
+                    alt="product-img"
+                    width="176"
+                    height="176"
+                  />
+                </div>
+                <div class="list-image-item">
+                  <img
+                    src="/images/image-product-3-thumbnail.jpg"
+                    alt="product-img"
+                    width="176"
+                    height="176"
+                  />
+                </div>
+                <div class="list-image-item">
+                  <img
+                    src="/images/image-product-4-thumbnail.jpg"
+                    alt="product-img"
+                    width="176"
+                    height="176"
+                  />
+                </div>
+              </section>
             </section>
           </section>
 
