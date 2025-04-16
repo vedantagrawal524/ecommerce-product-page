@@ -44,6 +44,7 @@ body {
 
 a {
   all: unset;
+  cursor: pointer;
 }
 
 .page {
@@ -145,6 +146,7 @@ nav.active .navs {
   text-decoration: none;
   transition: all 0.3s linear;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-links:hover {
