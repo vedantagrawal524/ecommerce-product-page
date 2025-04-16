@@ -42,6 +42,10 @@ body {
   position: relative;
 }
 
+a {
+  all: unset;
+}
+
 .page {
   padding: 1rem 7rem;
 }
@@ -85,7 +89,7 @@ nav {
   background-position: center;
   transition: all 0.2s linear;
   cursor: pointer;
-  z-index: 16;
+  z-index: 14;
 }
 
 .menu-button:hover {
@@ -109,7 +113,7 @@ nav.active .menu-button {
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 11;
+  z-index: 12;
   background: var(--black-80);
 }
 
@@ -196,7 +200,7 @@ nav.active .navs {
   top: 2.5em;
   right: -8.5em;
   border-radius: 1em;
-  z-index: 9;
+  z-index: 11;
   width: 22rem;
   min-height: 15rem;
   background: white;
@@ -380,7 +384,7 @@ main {
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 10;
+  z-index: 15;
   background: var(--black-80);
   display: none;
   align-items: center;
@@ -579,46 +583,85 @@ main {
   margin-right: 0.6em;
 }
 
-a {
-  all: unset;
-  cursor: pointer;
-}
-
-.hide {
-  display: none;
-}
-
-/* Media Queries */
-@media (max-width: 1200px) {
-}
-
-@media screen and (max-width: 768px) {
+@media (max-width: 1350px) {
   .page {
-    padding: 0rem 0rem 3rem 0rem;
+    padding: 0 0 3rem 0;
   }
-
-  /* Nav */
   nav {
-    border-bottom: none;
     margin-bottom: 0;
   }
-
   .nav-left {
-    gap: 1em;
+    gap: 2.5em;
   }
-
-  .menu-button {
-    display: inline-block;
+  .cart-menu {
+    right: -4.6em;
   }
+  main {
+    margin-top: 0;
+  }
+  .productPage {
+    gap: 4em;
+    padding: 4rem;
+  }
+  .product-name {
+    font-size: 2.7em;
+  }
+}
 
+@media (max-width: 1024px) {
+  .list-image-item {
+    width: 4.5em;
+    height: 4.5em;
+  }
+  .product-content {
+    padding: 0 2em;
+  }
+  .company-name {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 950px) {
   .logo img {
     max-width: 90%;
     height: auto;
   }
+  .cart-menu {
+    right: -4.6em;
+    width: 19rem;
+    min-height: 13rem;
+  }
+  .productPage {
+    gap: 2em;
+    padding: 3rem;
+  }
+  .product-name {
+    font-size: 1.9em;
+    margin-bottom: 1.2rem;
+  }
+  .current-price {
+    font-size: 1.5em;
+  }
+  .list-image-item {
+    width: 4em;
+    height: 4em;
+  }
+  .product-description {
+    font-size: 0.95em;
+    margin-bottom: 1.2rem;
+  }
+}
 
+@media screen and (max-width: 860px) {
+  .nav-left {
+    gap: 1em;
+  }
+  .menu-button {
+    display: inline-block;
+  }
   .navs {
     position: absolute;
-    z-index: 15;
+    z-index: 13;
     top: 0;
     left: 0;
     max-width: 13em;
@@ -628,49 +671,40 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-top: 7em;
-    padding-left: 1.5rem;
+    padding: 7em 0 0 1.5rem;
     transform: translateX(-100%);
   }
-
   .nav-links {
     color: var(--very-dark-blue);
     font-size: 1em;
     font-weight: var(--fw-bold);
   }
-
   .nav-links:hover {
     color: var(--dark-grayish-blue);
   }
-
   .nav-links:hover::after {
     all: unset;
   }
-
   .nav-right {
     gap: 1.5em;
   }
-
   .avatar {
     width: 2.5em;
   }
 
   /* Cart */
   .cart-menu {
-    z-index: 11;
     right: -3.5em;
     width: 20rem;
-    min-height: 13rem;
   }
 
-  /* Main */
+  /* Main layout */
   .productPage {
     flex-direction: column;
     gap: 1em;
-    padding: 0rem;
+    padding: 0;
   }
 
-  /* Product Gallery */
   .productPage .desktop {
     display: none;
   }
@@ -680,8 +714,6 @@ a {
   }
 
   .display-image img.active {
-    max-width: none;
-    max-height: none;
     width: 100%;
     height: auto;
     border-radius: 0;
@@ -693,26 +725,26 @@ a {
     height: auto;
     width: auto;
     background: none;
+    z-index: 10;
   }
 
   .list-images {
     display: none;
   }
 
-  .prev-button {
-    left: 2.2em;
+  .prev-button,
+  .next-button {
     height: 2em;
     width: 2em;
+    background-size: 0.6em;
+  }
+
+  .prev-button {
+    left: 2.2em;
   }
 
   .next-button {
     right: 2.2em;
-    height: 2em;
-    width: 2em;
-  }
-  .prev-button,
-  .next-button {
-    background-size: 0.6em;
   }
 
   .close-button {
@@ -724,8 +756,7 @@ a {
   }
 
   .company-name {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 
   .product-name {
@@ -757,7 +788,7 @@ a {
 
   .prev-price {
     font-size: 1em;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
 
   .add-to-cart {
@@ -809,7 +840,6 @@ a {
 
 @media screen and (max-width: 320px) {
   .cart-menu {
-    width: 17.5rem;
-    min-height: 12rem;
+    width: 17.5;
   }
 }
