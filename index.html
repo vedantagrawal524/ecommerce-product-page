@@ -15,19 +15,21 @@
       href="/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="/js/main.js"></script>
+    <script src="/js/nav-menu.js" defer></script>
+    <script src="/js/product-gallery.js" defer></script>
+    <script src="/js/cart.js" defer></script>
   </head>
 
   <body>
     <div class="page">
       <header>
-        <nav class="">
+        <nav>
           <div class="nav-left">
+            <div class="overlay"></div>
             <div class="menu-button"></div>
             <a href="#" class="logo">
               <img src="/images/logo.svg" alt="Logo" width="138" height="20" />
             </a>
-            <div class="backdrop"></div>
             <ul class="navs">
               <li><a href="#collections" class="nav-links">Collections</a></li>
               <li><a href="#men" class="nav-links">Men</a></li>
@@ -68,7 +70,7 @@
 
       <main>
         <section class="productPage">
-          <section class="product-gallery desktop">
+          <section class="product-gallery displayImgs">
             <section class="display-image">
               <img
                 class="active"
@@ -132,7 +134,7 @@
             </section>
           </section>
 
-          <section class="lightbox">
+          <section class="preview">
             <section class="product-gallery">
               <section class="display-image">
                 <img
